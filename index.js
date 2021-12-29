@@ -1,3 +1,5 @@
+import { teams } from './teams.js';
+
 console.log('');
 console.log('===============================================');
 console.log('===== COMIENZO DE LA FASE DE ELIMINATORIAS ====');
@@ -5,7 +7,8 @@ console.log('===============================================');
 console.log('');
 console.log('Equipos que van a participar en el playoff:');
 console.log('');
-console.log('España, Galicia, Deportivo de La Coruña, Cataluña, País Vasco, Francia, Italia, Alemania, Holanda, Inglaterra, Croacia, Argentina, Brasil, Uruguay, México, Colombia');
+console.log(teams);
+console.log('Deportivo de La Coruña, Galicia, Cataluña, País Vasco, España, Francia, Italia, Alemania, Holanda, Inglaterra, Croacia, Argentina, Brasil, Uruguay, México, Colombia');
 console.log('');
 console.log('===== OCTAVOS DE FINAL ====');
 console.log('');

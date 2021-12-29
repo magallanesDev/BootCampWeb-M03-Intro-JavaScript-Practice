@@ -1,0 +1,20 @@
+{
+  "name": "FULL STACK WEB BOOTCAMP - XII Edition - KeepCoding",
+  "version": "1.0.0",
+  "description": "PRACTICE M03 - Intro JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magallanesDev/BootCampWeb-M03-Intro-JavaScript-Practice.git"
+  },
+  "author": "Mario Filgueiras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magallanesDev/BootCampWeb-M03-Intro-JavaScript-Practice/issues"
+  },
+  "homepage": "https://github.com/magallanesDev/BootCampWeb-M03-Intro-JavaScript-Practice#readme",
+  "type": "module"
+}
