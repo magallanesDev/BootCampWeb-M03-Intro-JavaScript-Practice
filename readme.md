@@ -9,7 +9,7 @@
 
 #### Fase de eliminatorias (playoff). Participan 16 equipos: Deportivo de La Coruña, Galicia, Cataluña, País Vasco, España, Francia, Italia, Alemania, Holanda, Inglaterra, Croacia, Argentina, Brasil, Uruguay, México, Colombia.
 
-#### La segunda ronda de la fase de eliminatorias (cuartos de final) enfrentará a los 8 equipos ganadores de los partidos de la ronda anterior (octavo de final). Los ganadores de estos partidos pasarán a la siguiente ronda (semifinales).
+#### La segunda ronda de la fase de eliminatorias (cuartos de final) enfrentará a los 8 equipos ganadores de los partidos de la ronda anterior (octavos de final). Los ganadores de estos partidos pasarán a la siguiente ronda (semifinales).
 
 #### Los equipos ganadores de las semifinales pasarán a la gran final. El ganador de este partido se proclamará CAMPEÓN DEL MUNDO.
 
