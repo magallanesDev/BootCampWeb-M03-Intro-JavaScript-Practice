@@ -1,4 +1,7 @@
 import { teams } from './teams.js';
+import { setupArrays } from './utils/index.js';
+
+setupArrays();
 
 console.log('');
 console.log('===============================================');
@@ -7,7 +10,7 @@ console.log('===============================================');
 console.log('');
 console.log('Equipos que van a participar en el playoff (octavos de final):');
 console.log('');
-teams.forEach(element => {console.log(element)});
+teams.shuffle().forEach(element => {console.log(element)});
 console.log('');
 console.log('===== OCTAVOS DE FINAL ====');
 console.log('');
