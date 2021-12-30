@@ -184,4 +184,157 @@ playRoundOf8();
 console.log(winnersOf8);
 
 
+console.log('===== SEMIFINALES ====');
+let winnersOf4 = [];
+function playRoundOf4() {
+    let goals = [];
+    for (let i = 0; i < winnersOf8.length; i++) {
+        goals[i] = generateGoals();
+    }
+    
+    for (let i = 0; i < winnersOf8.length; i++) {
+        if (i % 2 === 0) {
+            console.log(`${winnersOf8[i]} ${goals[i]} - ${winnersOf8[i+1]} ${goals[i+1]}`);
+            
+            if (goals[i] > goals[i+1]) {
+                winnersOf4.push(winnersOf8[i]);
+                console.log(`${winnersOf8[i]} pasa de ronda`);
+                console.log(winnersOf4);
+                console.log('');
+            }
+            if (goals[i] < goals[i+1]) {
+                winnersOf4.push(winnersOf8[i+1]);
+                console.log(`${winnersOf8[i+1]} pasa de ronda`);
+                console.log(winnersOf4);
+                console.log('');
+                
+            }
+            if (goals[i] === goals[i+1]) {
+                console.log('Hubo un empate. Jugamos la prórroga')
+                goals[i] = generateGoals();
+                goals[i+1] = generateGoals();
+                console.log(`${winnersOf8[i]} ${goals[i]} - ${winnersOf8[i+1]} ${goals[i+1]}`);
+                if (goals[i] > goals[i+1]) {
+                    winnersOf4.push(winnersOf8[i]);
+                    console.log(`${winnersOf8[i]} pasa de ronda`);
+                    console.log(winnersOf4);
+                    console.log('');
+                }
+                if (goals[i] < goals[i+1]) {
+                    winnersOf4.push(winnersOf8[i+1]);
+                    console.log(`${winnersOf8[i+1]} pasa de ronda`);
+                    console.log(winnersOf4);
+                    console.log('');
+                }
+                if (goals[i] === goals[i+1]) {
+                    console.log('Hubo otro empate en la prórroga. Jugamos los penaltis')
+                    goals[i] = generateGoals();
+                    goals[i+1] = generateGoals();
+                    console.log(`${winnersOf8[i]} ${goals[i]} - ${winnersOf8[i+1]} ${goals[i+1]}`);
+                    if (goals[i] > goals[i+1]) {
+                        winnersOf4.push(winnersOf8[i]);
+                        console.log(`${winnersOf8[i]} pasa de ronda`);
+                        console.log(winnersOf4);
+                        console.log('');
+                    }
+                    if (goals[i] < goals[i+1]) {
+                        winnersOf4.push(winnersOf8[i+1]);
+                        console.log(`${winnersOf8[i+1]} pasa de ronda`);
+                        console.log(winnersOf4);
+                        console.log('');
+                    }
+                    if (goals[i] === goals[i+1]) {
+                        console.log('Hubo otro empate en los penaltis. Pasa el equipo local');
+                        winnersOf4.push(winnersOf8[i]);
+                        console.log(`${winnersOf8[i]} pasa de ronda`);
+                        console.log(winnersOf4);
+                        console.log('');
+                    }
+                }
+            } 
+        }
+    }
+    return winnersOf4;  
+}
+
+playRoundOf4();
+console.log(winnersOf4);
+
+
+console.log('===== FINAL ====');
+let winnersOf2 = [];
+function playRoundOf2() {
+    let goals = [];
+    for (let i = 0; i < winnersOf4.length; i++) {
+        goals[i] = generateGoals();
+    }
+    
+    for (let i = 0; i < winnersOf4.length; i++) {
+        if (i % 2 === 0) {
+            console.log(`${winnersOf4[i]} ${goals[i]} - ${winnersOf4[i+1]} ${goals[i+1]}`);
+            
+            if (goals[i] > goals[i+1]) {
+                winnersOf2.push(winnersOf4[i]);
+                console.log(`${winnersOf4[i]} pasa de ronda`);
+                console.log(winnersOf2);
+                console.log('');
+            }
+            if (goals[i] < goals[i+1]) {
+                winnersOf2.push(winnersOf4[i+1]);
+                console.log(`${winnersOf4[i+1]} pasa de ronda`);
+                console.log(winnersOf2);
+                console.log('');
+                
+            }
+            if (goals[i] === goals[i+1]) {
+                console.log('Hubo un empate. Jugamos la prórroga')
+                goals[i] = generateGoals();
+                goals[i+1] = generateGoals();
+                console.log(`${winnersOf4[i]} ${goals[i]} - ${winnersOf4[i+1]} ${goals[i+1]}`);
+                if (goals[i] > goals[i+1]) {
+                    winnersOf2.push(winnersOf4[i]);
+                    console.log(`${winnersOf4[i]} pasa de ronda`);
+                    console.log(winnersOf2);
+                    console.log('');
+                }
+                if (goals[i] < goals[i+1]) {
+                    winnersOf2.push(winnersOf4[i+1]);
+                    console.log(`${winnersOf4[i+1]} pasa de ronda`);
+                    console.log(winnersOf2);
+                    console.log('');
+                }
+                if (goals[i] === goals[i+1]) {
+                    console.log('Hubo otro empate en la prórroga. Jugamos los penaltis')
+                    goals[i] = generateGoals();
+                    goals[i+1] = generateGoals();
+                    console.log(`${winnersOf4[i]} ${goals[i]} - ${winnersOf4[i+1]} ${goals[i+1]}`);
+                    if (goals[i] > goals[i+1]) {
+                        winnersOf2.push(winnersOf4[i]);
+                        console.log(`${winnersOf4[i]} pasa de ronda`);
+                        console.log(winnersOf2);
+                        console.log('');
+                    }
+                    if (goals[i] < goals[i+1]) {
+                        winnersOf2.push(winnersOf4[i+1]);
+                        console.log(`${winnersOf4[i+1]} pasa de ronda`);
+                        console.log(winnersOf2);
+                        console.log('');
+                    }
+                    if (goals[i] === goals[i+1]) {
+                        console.log('Hubo otro empate en los penaltis. Pasa el equipo local');
+                        winnersOf2.push(winnersOf4[i]);
+                        console.log(`${winnersOf4[i]} pasa de ronda`);
+                        console.log(winnersOf2);
+                        console.log('');
+                    }
+                }
+            } 
+        }
+    }
+    return winnersOf2;  
+}
+
+playRoundOf2();
+console.log(winnersOf2);
+
 
