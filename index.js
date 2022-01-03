@@ -81,8 +81,7 @@ function playRoundOf16() {
                 }
             } 
         }
-    }
-    return winnersOf16;  
+    } 
 }
 
 playRoundOf16();
@@ -152,8 +151,7 @@ function playRoundOf8() {
                 }
             } 
         }
-    }
-    return winnersOf8;  
+    } 
 }
 
 playRoundOf8();
@@ -239,7 +237,6 @@ function playRoundOf4() {
             } 
         }
     }
-    return winnersOf4; 
 }
 
 playRoundOf4();
@@ -316,8 +313,7 @@ function playRoundOf2ConsolationFinal() {
                 }
             } 
         }
-    }
-    return winnersOf2ConsolationFinal;  
+    } 
 }
 
 playRoundOf2ConsolationFinal();
@@ -423,7 +419,6 @@ function playRoundOf2Final() {
             } 
         }
     }
-    return winnersOf2Final;  
 }
 
 playRoundOf2Final();
